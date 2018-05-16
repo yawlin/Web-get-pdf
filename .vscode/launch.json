@@ -1,0 +1,30 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "perl",
+            "request": "launch",
+            "name": "Perl-Debug local",
+            "program": "${workspaceFolder}/${relativeFile}",
+            "exec": "perl",
+            "execArgs": [],
+            "root": "${workspaceRoot}/",
+            "inc": [],
+            "args": [],
+            "env": {},
+            "stopOnEntry": true
+        },
+        {
+            "type": "perl",
+            "request": "launch",
+            "name": "Perl-Debug remote",
+            "program": "${workspaceFolder}/${relativeFile}",
+            "root": "${workspaceRoot}/",
+            "stopOnEntry": true,
+            "port": 5000
+        }
+    ]
+}
